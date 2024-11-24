@@ -1,7 +1,7 @@
-import js from '@eslint/js';
-import svelte from 'eslint-plugin-svelte';
-import globals from 'globals';
-import ts from 'typescript-eslint';
+import js from "@eslint/js";
+import svelte from "eslint-plugin-svelte";
+import globals from "globals";
+import ts from "typescript-eslint";
 
 export default ts.config(
   js.configs.recommended,
@@ -9,22 +9,22 @@ export default ts.config(
   ...svelte.configs["flat/recommended"],
   {
     languageOptions: {
-	  globals: {
-	    ...globals.browser,
-	    ...globals.node
-	  }
-	}
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
+    },
   },
   {
     files: ["**/*.svelte"],
 
     languageOptions: {
-	  parserOptions: {
-	    parser: ts.parser
-	  }
-	}
+      parserOptions: {
+        parser: ts.parser,
+      },
+    },
   },
   {
-    ignores: ["build/", ".svelte-kit/", "dist/"]
-  }
+    ignores: ["build/", ".svelte-kit/", "dist/"],
+  },
 );
