@@ -29,9 +29,13 @@
     "vite": "^5.4.11"
   },
   "dependencies": {
+    "@fontsource/atkinson-hyperlegible": "^5.1.0",
+    "@fontsource/jetbrains-mono": "^5.1.1",
     "@tailwindcss/forms": "^0.5.9",
     "@tailwindcss/postcss": "^4.0.0-beta.2",
     "@tailwindcss/typography": "^0.5.15",
-    "@tailwindcss/vite": "^4.0.0-beta.2"
+    "@tailwindcss/vite": "^4.0.0-beta.2",
+    "open-props": "^1.7.7",
+    "svelte-radix": "^2.0.1"
   }
 }
