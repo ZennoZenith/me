@@ -1,4 +1,4 @@
-node_modules
+node_modules/
 
 # Output
 .output
@@ -19,3 +19,8 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+
+# Added by cargo
+
+/target
