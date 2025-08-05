@@ -8,6 +8,65 @@
     {% include "navbar.html" %}
     <main class="p-8 md:p-16 grid gap-8">
       <section class="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <div class="flex justify-center">
+          <img
+            style="width: min(100%, 300px)"
+            src="/assets/images/showcases/nucert-example.webp"
+          >
+        </div>
+        <div class="grid gap-3">
+          <div>
+            <h3 class="text-4xl text-secondary font-bold external-link">
+              Nucert
+            </h3>
+            <p>
+              Self documenting <a
+                href="https://www.nushell.sh"
+                class="underline"
+                target="_blank"
+              >
+                nushell</a> script to issue and renew TLS certs from Let's
+              Encrypt.
+            </p>
+            <p>
+              <a
+                class="underline text-accent"
+                target="_blank"
+                href="https://github.com/ZennoZenith/nucert"
+              >Github</a>.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-2xl text-secondary font-bold">
+              What I learned from this project
+            </h4>
+            <ul class="list-inside list-disc">
+              <li>How SSL certificate is issued</li>
+              <li>
+                Reading RFCs
+                <a
+                  href="https://datatracker.ietf.org/doc/html/rfc8555"
+                  target="_blank"
+                  class="underline"
+                >RFC8555</a>
+                <a
+                  href="https://datatracker.ietf.org/doc/html/rfc5280"
+                  target="_blank"
+                  class="underline"
+                >RFC5280</a>
+              </li>
+              <li>Mock testing</li>
+              <li>SSL certificate generation</li>
+              <li>Using openssl and nginx</li>
+            </ul>
+          </div>
+          <a class="underline" href="/showcases#nucert">
+            See nucert showcase
+          </a>
+        </div>
+      </section>
+      <div class="divider"></div>
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-2">
         <div class="md:order-2 flex justify-center">
           <img src="/assets/images/showcases/railway-api-1.png">
         </div>

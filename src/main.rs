@@ -35,7 +35,7 @@ async fn main() {
         .await
         .expect("Unable to bind to host:port");
 
-    println!("Listning from {}:{}", host, port);
+    println!("Listning from {host}:{port}");
     axum::serve(listener, app.into_make_service())
         .await
         .unwrap();
