@@ -1,8 +1,11 @@
 @import "tailwindcss";
-@plugin "daisyui";
+/* @plugin "daisyui"; */
+@plugin "daisyui" {
+  themes: all;
+}
 
 @theme {
-  --font-display: "Satoshi", "sans-serif";
+  /* --font-display: "Satoshi", "sans-serif";
   --font-family-sans:
     ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
@@ -10,7 +13,7 @@
     "Noto Color Emoji";
   --font-family-mono:
     ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-    "Courier New", monospace;
+    "Courier New", monospace; */
 
   --color-magnum-50: hsl(40, 100%, 96%);
   --color-magnum-100: hsl(42, 95%, 92%);
@@ -49,3 +52,202 @@
   --color-surface-content: var(--color-base-content);
   --color-default: var(--color-base-200);
 }
+
+/* a::after {
+  content: " (" attr(href) ")";
+} */
+
+.dead-link {
+  text-decoration: line-through;
+}
+
+.dead-link::after {
+  content: url("/assets/images/warning.svg");
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+}
+
+/* .external-link {
+  text-decoration: line-through;
+} */
+
+.external-link::after {
+  content: url("/assets/images/external-link.svg");
+  display: inline-block;
+  color: darkred;
+  width: 12px;
+  height: 12px;
+}
+
+a[target="_blank"]::after {
+  content: url("/assets/images/external-link.svg");
+  display: inline-block;
+  color: darkred;
+  width: 12px;
+  height: 12px;
+}
+
+/*
+.passion-one-regular {
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.passion-one-bold {
+  font-family: "Passion One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.passion-one-black {
+  font-family: "Passion One", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.taviraj-thin {
+  font-family: "Taviraj", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.taviraj-extralight {
+  font-family: "Taviraj", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.taviraj-light {
+  font-family: "Taviraj", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.taviraj-regular {
+  font-family: "Taviraj", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.taviraj-medium {
+  font-family: "Taviraj", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.taviraj-semibold {
+  font-family: "Taviraj", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.taviraj-bold {
+  font-family: "Taviraj", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.taviraj-extrabold {
+  font-family: "Taviraj", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.taviraj-black {
+  font-family: "Taviraj", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.taviraj-thin-italic {
+  font-family: "Taviraj", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.taviraj-extralight-italic {
+  font-family: "Taviraj", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.taviraj-light-italic {
+  font-family: "Taviraj", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.taviraj-regular-italic {
+  font-family: "Taviraj", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.taviraj-medium-italic {
+  font-family: "Taviraj", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.taviraj-semibold-italic {
+  font-family: "Taviraj", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.taviraj-bold-italic {
+  font-family: "Taviraj", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.taviraj-extrabold-italic {
+  font-family: "Taviraj", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.taviraj-black-italic {
+  font-family: "Taviraj", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.athiti-extralight {
+  font-family: "Athiti", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.athiti-light {
+  font-family: "Athiti", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.athiti-regular {
+  font-family: "Athiti", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.athiti-medium {
+  font-family: "Athiti", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.athiti-semibold {
+  font-family: "Athiti", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.athiti-bold {
+  font-family: "Athiti", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+*/

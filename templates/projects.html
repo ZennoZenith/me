@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="forest">
+  <head>
+    {% include "head.html" %}
+    <title>Projects</title>
+  </head>
+  <body>
+    {% include "navbar.html" %}
+    <main class="p-8 md:p-16 grid gap-8">
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <div class="md:order-2 flex justify-center">
+          <img src="/assets/images/showcases/railway-api-1.png">
+        </div>
+        <div class="md:order-1 grid gap-3">
+          <div>
+            <h3 class="text-4xl text-secondary font-bold">Railway Api</h3>
+            <p>
+              Unofficial Indian Railway API to access railway related data
+              written in Rust, hosted on <a
+                class="underline text-accent"
+                target="_blank"
+                href="https://api.railway.zennozenith.com"
+              >api.railway.zennozenith.com</a>.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-2xl text-secondary font-bold">
+              What I learned from this project
+            </h4>
+            <ul class="list-inside list-disc">
+              <li>
+                Learning Rust programming language
+              </li>
+              <li>
+                Database design
+              </li>
+              <li>
+                Containerization using <a href="https://www.docker.com/"
+                >Docker</a>
+              </li>
+              <li>
+                Rate Limiting
+              </li>
+              <li>
+                Caching
+              </li>
+              <li>
+                Web Hosting
+              </li>
+              <li>
+                Nginx, https/ssl
+              </li>
+              <li>
+                How to create OpenAPI documentation
+              </li>
+              <li>
+                Writing documentation
+              </li>
+            </ul>
+          </div>
+
+          <a class="underline" href="/showcases#railway-api">
+            See Railway api showcase
+          </a>
+        </div>
+      </section>
+      <div class="divider"></div>
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <div class="flex justify-center">
+          <img
+            style="width: min(100%, 300px)"
+            src="/assets/images/showcases/railway-api-frontend-1.png"
+          >
+        </div>
+        <div class="grid gap-3">
+          <div>
+            <a href="/showcases#railway-query">
+              <h3 class="text-4xl text-secondary font-bold external-link">
+                Railway Query
+              </h3>
+            </a>
+            <p>
+              Frontend for Unofficial Indian Railway using above API made with
+              <a class="underline" href="https://svelte.dev/">Svelte</a>, hosted
+              on <a
+                class="underline text-accent"
+                href="https://railway.zennozenith.com"
+              >railway.zennozenith.com</a>.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-2xl text-secondary font-bold">
+              What I learned from this project
+            </h4>
+            <ul class="list-inside list-disc">
+              <li>Learning Frontend Development</li>
+              <li>Learning Typescript</li>
+              <li>Learning Svelte</li>
+              <li>Learning state management</li>
+              <li>
+                Styling using <a
+                  class="underline"
+                  href="https://tailwindcss.com/"
+                >tailwindcss</a>
+              </li>
+              <li>Component Libraries</li>
+              <li>Authentication (yet to be implemented)</li>
+              <li>Caching</li>
+            </ul>
+          </div>
+          <a class="underline" href="/showcases#railway-query">
+            See Railway Query showcase
+          </a>
+        </div>
+      </section>
+      <div class="divider"></div>
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <div class="md:order-2 flex justify-center">
+          <img src="/assets/images/showcases/railway-api-npm-1.png">
+        </div>
+        <div class="md:order-1 grid gap-3">
+          <div>
+            <h3 class="text-4xl text-secondary font-bold">
+              api-railway npm package
+            </h3>
+            <p>
+              API wrapper for above mention railway api written in Typescript
+              <a
+                class="underline text-accent"
+                href="https://www.npmjs.com/package/api-railway"
+              >https://www.npmjs.com/package/api-railway</a>.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-2xl text-secondary font-bold">
+              What I learned from this project
+            </h4>
+            <ul class="list-inside list-disc">
+              <li>How to publish NPM package</li>
+              <li>How to write API client</li>
+              <li>
+                <a class="underline" href="https://semver.org/"
+                >Semantic Versioning</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="divider"></div>
+      <section>
+        <h2 class="text-primary text-4xl font-bold lg:text-5xl mb-2">
+          Contributions
+        </h2>
+        <ul>
+          <li>
+            <a
+              class="underline"
+              target="_blank"
+              href="https://github.com/ZennoZenith/rucola"
+            >Rucola</a> - Terminal-based markdown note manager.
+          </li>
+          <li>
+            <a
+              class="underline"
+              target="_blank"
+              href="https://github.com/ZennoZenith/nvrs"
+            >Nvrs</a> - 🚦 fast new version checker for software releases 🦀
+          </li>
+          <li>
+            <a
+              class="underline"
+              target="_blank"
+              href="https://github.com/ZennoZenith/lf"
+            >Lf</a> - Terminal file manager
+          </li>
+        </ul>
+      </section>
+    </main>
+    {% include "footer.html" %}
+  </body>
+</html>
